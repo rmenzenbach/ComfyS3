@@ -30,6 +30,7 @@ class S3:
             s3 = boto3.resource(
                 service_name='s3',
                 region_name=self.region,
+                endpoint_url='https://s3.wasabisys.com',
                 aws_access_key_id=self.access_key,
                 aws_secret_access_key=self.secret_key
             )
